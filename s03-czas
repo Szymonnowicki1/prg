@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+struct czas
+{
+    int godzina;
+    int minuta;
+    int sekunda;
+};
+
+
+    string tostring( int godzina, int minuta, int sekunda)
+    {
+        cout << godzina << " "<< minuta << " "<< sekunda;
+    }
+
+
+int main()
+{
+    tostring(21,22,55);
+
+}
