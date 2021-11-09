@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+struct studenci
+{
+    string imie;
+    string nazwisko;
+    string nr_indeksu;
+    int semestr;
+    float srednia;
+};
+int main()
+{
+    studenci szymon_nowicki =
+    {
+        "Szymon",
+        "Nowicki",
+        "s24275",
+        1,
+        4,
+    };
+
+    cout << "Imie :" << szymon_nowicki.imie <<endl;
+    cout << "Nazwisko :" << szymon_nowicki.nazwisko <<endl;
+    cout << "Nr indeksu :" << szymon_nowicki.nr_indeksu <<endl;
+    cout << "Semestr :" << szymon_nowicki.semestr <<endl;
+    cout << "Srednia :" << szymon_nowicki.srednia <<endl;
+    getch();
+    return 0;
+
+}
