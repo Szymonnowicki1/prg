@@ -1,0 +1,29 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int liczba, x, ilosc_iteracji=0, licznik=0;
+
+int main()
+{
+    cout <<"Podaj liczbe : " <<endl;
+    cin >> liczba;
+    x = sqrt(liczba);
+    for(int i = 2; i <= x; i++)
+    {
+        if(liczba % i == 0)
+        {
+            licznik++;
+        }
+        ilosc_iteracji++;
+    }
+    if (licznik == 0)
+    {
+        cout << "Jest to liczba pierwsza " << endl;
+    }
+    else
+    {
+        cout << "Nie jest to liczb pierwsza" << endl;
+    }
+    cout << "Ilosc  iteracji = " << ilosc_iteracji << endl;
+}
