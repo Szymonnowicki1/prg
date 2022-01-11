@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+void func()
+{
+    int x = 2, y = 20, i;
+    bool pierwsza = true;
+
+
+    while (x < y)
+    {
+        pierwsza = true;
+
+        for (i = 2; i <= x / 2; ++i)
+        {
+            if (x % i == 0) {
+                pierwsza = false;
+                break;
+            }
+        }
+
+
+        if (pierwsza)
+            cout << x << " ";
+
+        ++x;
+    }
+
+    cout << endl;
+}
+int main()
+{
+    func();
+    func();
+
+    return 0;
+}
